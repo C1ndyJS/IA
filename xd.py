@@ -90,3 +90,90 @@ if found_bfs:
         print("".join(row))
 else:
     print("No hay un camino válido usando BFS.")
+
+#Prueba SimpleAI
+'''from simpleai.search import SearchProblem, breadth_first
+
+# Definir el laberinto
+maze = [
+    "S0100",
+    "00010",
+    "11000",
+    "01110",
+    "0000E"
+]
+
+# Convertir el laberinto en una lista de listas para facilitar el acceso a los elementos
+maze = [list(row) for row in maze]
+
+# Encontrar las coordenadas de inicio y fin en el laberinto
+def find_start(maze):
+    for i in range(len(maze)):
+        for j in range(len(maze[i])):
+            if maze[i][j] == "S":
+                start = (i, j)
+                return start
+    raise ValueError("No se encontró la ubicación de inicio ('S') en el laberinto.")
+
+def find_goal(maze):
+    return (len(maze) - 1, maze[-1].index("E"))
+
+# Definir la clase del problema de búsqueda
+class MazeProblem(SearchProblem):
+    def __init__(self, initial_state, goal_state):
+        super(MazeProblem, self).__init__(initial_state)
+        self.goal_state = goal_state
+
+    def is_goal(self, state):
+        return state == self.goal_state
+
+    def actions(self, state):
+        actions = []
+        i, j = state
+
+        # Definir las acciones posibles (movimientos arriba, abajo, izquierda y derecha)
+        possible_moves = [(i - 1, j), (i + 1, j), (i, j - 1), (i, j + 1)]
+
+        for move in possible_moves:
+            if 0 <= move[0] < len(maze) and 0 <= move[1] < len(maze[0]) and maze[move[0]][move[1]] != "1":
+                actions.append(move)
+
+        return actions
+
+    def result(self, state, action):
+        return action
+
+    def cost(self, state, action, state2):
+        return 1
+
+# Encontrar las coordenadas de inicio y fin en el laberinto
+start = find_start(maze)
+goal = find_goal(maze)
+# Crear una instancia del problema de búsqueda
+problem = MazeProblem(start, goal)
+
+# Resolver el laberinto utilizando BFS
+result = breadth_first(problem)
+
+# Mostrar la solución
+if result is not None:
+    print("Se encontró una solución:")
+    
+    # Construir el camino desde el resultado
+    path = [result.state]
+    while result.parent:
+        result = result.parent
+        path.append(result.state)
+    path.reverse()
+    
+    # Marcar el camino con "*"
+    for r, c in path:
+        if maze[r][c] != "S" and maze[r][c] != "E":
+            maze[r][c] = "*"
+
+    # Imprimir el laberinto con el camino marcado
+    for row in maze:
+        print("".join(row))
+else:
+    print("No se encontró una solución.")
+'''
