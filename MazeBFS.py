@@ -3,11 +3,11 @@
 from collections import deque
 import random
 # Constantes para las celdas
-MURO = "X"
+MURO = "█"
 PASILLO = " "
 INICIO = "S"
 FIN = "E"
-
+CAMINO ="°"
 def crear_laberinto(ancho, alto):
     # Inicializa el laberinto como una lista 2D lleno de muros
     laberinto = [[MURO for _ in range(ancho)] for _ in range(alto)]
@@ -41,7 +41,7 @@ def crear_laberinto(ancho, alto):
 
     # Imprimir el laberinto
     for fila in laberinto:
-        print(" ".join(fila))
+        print("".join(fila))
     return laberinto
 
 def encontrar_inicio_y_fin(laberinto):
@@ -96,10 +96,10 @@ camino_solucion = resolver_laberinto(laberinto)
 if camino_solucion:
     # Marcar el camino en el laberinto
     for x, y in camino_solucion:
-        laberinto[y][x] = '1'
+        laberinto[y][x] = CAMINO
 
     # Imprimir el laberinto con el camino marcado
     for fila in laberinto:
-        print(" ".join(fila))
+        print("".join(fila))
 else:
     print("No se encontró un camino desde S hasta E.")
