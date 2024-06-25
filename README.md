@@ -21,3 +21,23 @@ Este repositorio contiene una serie de ejercicios relacionados con la materia de
 
 Otros
 - xd.py: Archivo adicional (descripción no proporcionada).
+
+### Instrucciones de Uso
+Clonar el repositorio: 
+'git clone https://github.com/tu_usuario/tu_repositorio.git'
+Navegar al directorio del proyecto:
+'cd tu_repositorio'
+
+### Ejecutar los scripts:
+Los scripts pueden ser ejecutados utilizando Python 3. Asegúrate de tener todas las dependencias necesarias instaladas.
+
+Para ejecutar un script, usa el siguiente comando:
+python nombre_del_file.py
+
+### Contribuciones
+Las contribuciones son bienvenidas. Si encuentras algún error o tienes sugerencias de mejora, por favor abre un issue o un pull request.
+
+### Licencia
+Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+
+
