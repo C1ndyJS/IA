@@ -1,5 +1,5 @@
 # Ejercicios de Inteligencia Artificial - ISC UTP
-Este repositorio contiene una serie de ejercicios relacionados con la materia de Inteligencia Artificial, enfocados en la implementación de algoritmos de búsqueda y resolución de laberintos. Los ejercicios son parte del curso de Ingeniería en Sistemas Computacionales en la Universidad Tecnológica de Panamá (UTP).
+Este repositorio contiene una serie de ejercicios relacionados con la materia de Inteligencia Artificial, enfocados en la implementación de algoritmos de búsqueda y resolución de laberintos. Los ejercicios son parte del curso de Ingeniería en Sistemas Computacionales en la Universidad Tecnológica de Pereira (UTP).
 
 ## Contenido del Repositorio
 ### Algoritmos de Búsqueda
@@ -24,9 +24,9 @@ Otros
 
 ### Instrucciones de Uso
 Clonar el repositorio: 
-'git clone https://github.com/tu_usuario/tu_repositorio.git'
+'git clone https://github.com/C1ndyJS/IA.git' [IA.git](https://github.com/C1ndyJS/IA.git)
 Navegar al directorio del proyecto:
-'cd tu_repositorio'
+'cd IA'
 
 ### Ejecutar los scripts:
 Los scripts pueden ser ejecutados utilizando Python 3. Asegúrate de tener todas las dependencias necesarias instaladas.
